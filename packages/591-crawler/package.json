@@ -1,0 +1,24 @@
+{
+  "name": "591-crawler",
+  "version": "1.0.0",
+  "description": "591 crawler",
+  "author": "Yukai Huang <yukaihuangtw@gmail.com>",
+  "homepage": "https://github.com/Yukaii/zuzugo",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
