@@ -16,9 +16,11 @@
   ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "build:watch": "tsc -w"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "axios": "^0.18.0"
   }
 }
