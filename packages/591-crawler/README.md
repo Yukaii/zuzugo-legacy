@@ -4,8 +4,14 @@
 
 ## Usage
 
-```
-const 591Crawler = require('591-crawler');
+```js
+const crawler = require('591-crawler')();
 
-// TODO: DEMONSTRATE API
+;(async () => {
+  const { data } = await crawler.list()
+  const { post_id } = data[0]
+  const { longitude, latitude } = await crawler.getLocation(post_id)
+
+  console.log(longitude, latitude)
+})
 ```
