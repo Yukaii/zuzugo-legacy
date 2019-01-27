@@ -2,14 +2,17 @@
   "name": "root",
   "private": true,
   "devDependencies": {
+    "@types/chai": "^4.1.7",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.15",
+    "chai": "^4.2.0",
     "jest": "^23.6.0",
     "lerna": "^3.6.0",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "lerna run build"
   }
 }
