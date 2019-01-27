@@ -115,3 +115,39 @@ export interface TopData {
   section_str: string
   type: number
 }
+
+export enum RentKind {
+  All = 0,
+  Apart = 1,
+  SingleApart = 2,
+  ShareApart = 3,
+  ShareRoom = 4,
+  ParkingLot = 5
+}
+
+export enum PriceRange {
+  ALL = 0,
+  _5K = 1,
+  _5K_TO_10K = 2,
+  _10K_TO_20K = 3,
+  _20K_TO_30K = 4,
+  _30K_TO_40K = 5,
+  _40K_TO_60K = 6
+}
+
+export enum AreaRange {
+  ALL = '0,0',
+  _10_PIN = '0,10',
+  _10_TO_20_PIN = '10,20',
+  _20_TO_30_PIN = '20,30',
+  _30_TO_40_PIN = '30,40',
+  _40_TO_50_PIN = '40,50',
+  _50_UP_PIN = '50,'
+}
+
+export enum Sex {
+  ALL = 0,
+  M = 1,
+  F = 2,
+  Both = 3
+}
