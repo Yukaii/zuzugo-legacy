@@ -18,3 +18,14 @@ test('Test pagination', async function () {
 
   assert.notDeepEqual(result1.data[0], result2.data[1])
 })
+
+test('#getLocation', async function () {
+  const crawler = new Crawler()
+  const result = await crawler.list()
+  const id = result.data[0].post_id
+  const data = await crawler.getLocation(id)
+
+  assert.isNumber(data.latitude)
+  assert.isNumber(data.longitude)
+  assert.isString(data.address)
+})
